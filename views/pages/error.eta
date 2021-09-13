@@ -1,0 +1,8 @@
+<% layout("./layout.eta", {title: "Error", fontAwesome: true}) %> 
+<div class="box_container">
+  <div class="box">
+    <div class="box_icon"><i class="fas fa-times"></i></div>
+    <p class="bold">You're not authorised to join this server</p>
+    <p class="small">Try another account or ask the server owner to add your account.</p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<% layout("./layout.eta", {title: "Authenticate"}) %>
+<h1 class="large">You must authenticate to join <span class="bold"><%= it.name %></span>.</h1>
+<div class="box_container">
+  <div class="box">
+    <div class="box_icon"><span>1</span></div>
+    <p class="bold">First, login with Discord.</p>
+    <p class="small">This is so that we know your Discord account.</p>
+  </div>
+  <div class="box">
+    <div class="box_icon"><span>2</span></div>
+    <p class="bold">Next, login to another service.</p>
+    <p class="small">This verifies that you are the owner of the account.</p>
+  </div>
+</div>
+<a id="button" href="/auth/discord">Login</a>

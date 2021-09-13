@@ -1,0 +1,18 @@
+<% layout("./layout.eta", {title: "Authenticate", pageStyles: "/assets/authenticate.css"}) %>
+<h1 class="large">You must authenticate to join <span class="bold"><%= it.name %></span>.</h1>
+<div class="box_container" id="services_container">
+  <div class="box">
+    <div class="box_icon"><span>2</span></div>
+    <p class="bold">Next, login to another service.</p>
+    <p class="small">This verifies that you are the owner of the account.</p>
+  </div>
+  <div class="box" id="services">
+    <!-- <a class="service">Login with xyz</a>
+    <a class="service">Login with xyz</a>
+    <a class="service">Login with xyz</a>
+    <a class="service">Login with xyz</a> -->
+    <% it.enabled.forEach(e => { %>
+      <a class="service" href="/auth/<%= e.name %>">Login with <%= e.name[0].toUpperCase() + e.name.slice(1) %></a>
+    <% }) %>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<% layout("./layout.eta", {title: "Authenticated", fontAwesome: true}) %> 
+<div class="box_container">
+  <div class="box">
+    <div class="box_icon"><i class="fas fa-check"></i></div>
+    <p class="bold">You're authenticated</p>
+    <p class="small">You can now return to Discord.</p>
+  </div>
+</div>
